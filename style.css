@@ -1,0 +1,59 @@
+/* Plain and readable on purpose. These pages exist to be understood, and an
+   App Store reviewer should be able to find a clause in five seconds. */
+
+:root {
+  --bg: #ffffff;
+  --ink: #16202b;
+  --soft: #5b6775;
+  --rule: #e3e7eb;
+  --link: #11652f;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg: #0e1520;
+    --ink: #e7edf3;
+    --soft: #94a2b2;
+    --rule: #1e2a39;
+    --link: #3fd07a;
+  }
+}
+
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--ink);
+  font: 17px/1.65 -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+  -webkit-text-size-adjust: 100%;
+}
+
+main {
+  max-width: 34rem;
+  margin: 0 auto;
+  padding: 3.5rem 1rem 6rem;
+}
+
+.back { margin: 0 0 3rem; font-size: 0.85rem; letter-spacing: 0.04em; text-transform: uppercase; }
+.back a { color: var(--soft); text-decoration: none; }
+.back a:hover { color: var(--ink); }
+
+h1 { font-size: 1.9rem; line-height: 1.2; letter-spacing: -0.02em; margin: 0 0 1.5rem; }
+
+h2 {
+  font-size: 1.05rem;
+  letter-spacing: -0.01em;
+  margin: 2.75rem 0 0.75rem;
+  padding-top: 1.5rem;
+  border-top: 1px solid var(--rule);
+}
+
+p { margin: 0 0 1.1rem; }
+ul { margin: 0 0 1.1rem; padding-left: 1.2rem; }
+li { margin-bottom: 0.45rem; }
+strong { font-weight: 600; }
+a { color: var(--link); }
+
+/* The "last updated" line, which is the first paragraph of each document. */
+h1 + p { color: var(--soft); font-size: 0.95rem; }
