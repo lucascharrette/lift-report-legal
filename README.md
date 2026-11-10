@@ -1,6 +1,6 @@
-# Ski Monitor legal pages
+# Lift Report legal pages
 
-The published privacy policy and terms for the Ski Monitor iOS app.
+The published privacy policy and terms for the Lift Report iOS app.
 
 These pages are **generated**. The source lives in the app repository at
 `legal/privacy.md` and `legal/terms.md`, and is rendered here by
